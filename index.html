@@ -1,0 +1,1535 @@
+
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Serrurier Woluwe-Saint-Lambert | Serrurier Lambert 24h/24</title>
+  <meta name="description" content="Serrurier Lambert à Woluwe-Saint-Lambert : ouverture de porte, changement de serrure et dépannage d'urgence 24h/24. Contact : +32 494 81 07 87.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#103c47">
+
+  <style>
+    :root {
+      --primary: #103c47;
+      --primary2: #195566;
+      --accent: #e6a645;
+      --teal: #087b7c;
+      --text: #283d47;
+      --muted: #657781;
+      --light: #f2f7f7;
+      --white: #fff;
+      --border: #dce8ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: white;
+    }
+
+    a { color: var(--teal); }
+
+    .container {
+      max-width: 1140px;
+      width: calc(100% - 40px);
+      margin: auto;
+    }
+
+    .topbar {
+      background: #092c35;
+      color: #dcebec;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+    }
+
+    .topbar a { color: #ffe1a0; }
+
+    .header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      padding: 15px 0;
+    }
+
+    .logo {
+      color: var(--primary);
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 5px;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      background: var(--teal);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      transition: background .2s ease;
+    }
+
+    .btn:hover {
+      background: #056466;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,.12);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #103c47, #116579);
+      color: white;
+      padding: 85px 0;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #ffda8f;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.3;
+      color: var(--primary);
+    }
+
+    h1 {
+      color: white;
+      font-size: clamp(32px, 5vw, 52px);
+      margin: 18px 0 24px;
+    }
+
+    h2 {
+      font-size: clamp(25px, 3vw, 34px);
+      margin: 0 0 23px;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin: 25px 0 13px;
+    }
+
+    p { margin: 0 0 18px; }
+
+    .hero p {
+      font-size: 17px;
+      color: #e6f1f2;
+    }
+
+    .hero a:not(.btn) {
+      color: #ffdc99;
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .trustbar {
+      background: #eaf3f3;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .soft { background: var(--light); }
+
+    .article {
+      max-width: 940px;
+      margin: auto;
+    }
+
+    .article h2 {
+      margin-top: 45px;
+    }
+
+    .article h2:first-child { margin-top: 0; }
+
+    .article h3 { margin-top: 30px; }
+
+    ul, ol {
+      padding-left: 26px;
+      margin-bottom: 25px;
+    }
+
+    li { margin-bottom: 10px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(10,50,60,.04);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .service-number {
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      color: white;
+      background: var(--teal);
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      padding: 24px 28px;
+      border-left: 4px solid var(--teal);
+      background: var(--light);
+      border-radius: 0 10px 10px 0;
+      margin: 28px 0;
+    }
+
+    .steps {
+      display: grid;
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: white;
+      border: 1px solid var(--border);
+      padding: 22px;
+      border-radius: 12px;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--teal);
+      color: white;
+      font-weight: bold;
+    }
+
+    .step p { margin: 0; }
+
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+    }
+
+    .price-table th {
+      background: var(--primary);
+      color: white;
+      padding: 16px;
+      text-align: left;
+    }
+
+    .price-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 15px;
+    }
+
+    .price-table tbody tr:nth-child(even) {
+      background: var(--light);
+    }
+
+    .faq {
+      max-width: 940px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 13px;
+      padding: 0 22px;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 20px 0;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    details p { padding-bottom: 18px; }
+
+    .contact-box {
+      max-width: 920px;
+      margin: auto;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: white;
+    }
+
+    .nap-row {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nap-row:last-child { border-bottom: none; }
+
+    .nap-row strong {
+      display: inline-block;
+      min-width: 170px;
+    }
+
+    .cta {
+      background: var(--primary);
+      text-align: center;
+      padding: 70px 20px;
+      color: white;
+    }
+
+    .cta h2 { color: white; }
+
+    .cta p {
+      max-width: 750px;
+      margin: 0 auto 26px;
+      color: #e0eced;
+    }
+
+    .footer {
+      background: #082832;
+      padding: 33px 0;
+      color: #cfe1e3;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a { color: #a9e8e3; }
+
+    section[id] { scroll-margin-top: 100px; }
+
+    @media (max-width: 800px) {
+      .navigation { display: none; }
+      .navbar .btn { padding: 11px 15px; }
+      .cards { grid-template-columns: 1fr; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .section { padding: 47px 0; }
+      .hero { padding: 60px 0; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .contact-box { padding: 22px; }
+      .nap-row strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { width: calc(100% - 30px); }
+      .logo { font-size: 18px; }
+      .topbar { font-size: 12px; }
+      .price-table { font-size: 14px; }
+      .price-table td, .price-table th {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BANDEAU -->
+  <div class="topbar">
+    Serrurerie d'urgence à Woluwe-Saint-Lambert ·
+    24h/24 et 7j/7 ·
+    <a href="tel:+32494810787">+32 494 81 07 87</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        Serrurier Lambert
+        <small>Woluwe-Saint-Lambert · Bruxelles</small>
+      </a>
+
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="#presentation">Présentation</a>
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn" href="tel:+32494810787">
+        Appeler
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO ET LIENS SEO -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="eyebrow">
+          Serrurier à Woluwe-Saint-Lambert · 1200 Bruxelles
+        </div>
+
+        <h1>
+          Serrurier à Woluwe-Saint-Lambert :
+          dépannage d'urgence avec Serrurier Lambert
+        </h1>
+
+        <p>
+          Vous recherchez des
+          <a href="https://www.google.com/maps/place/Serrurier+Lambert+-+Woluwe/data=!4m2!3m1!1s0x0:0xd1f2a506daa8f46b?sa=X&amp;ved=1t:2428&amp;hl=en-GB&amp;ictx=111"
+             target="_blank"
+             rel="noopener noreferrer"
+             title="Services de serrurerie d’urgence à Woluwe-Saint-Lambert">Services de serrurerie d’urgence à Woluwe-Saint-Lambert</a>
+          pour une porte claquée, une serrure bloquée
+          ou des clés perdues ?
+          Serrurier Lambert – Woluwe propose une assistance
+          24h/24 et 7j/7.
+          Découvrez également ses
+          <a href="https://share.google/v8iJ2lnFxw2VqT8Fh"
+             target="_blank"
+             rel="noopener noreferrer"
+             title="Services de serrurerie à Woluwe-Saint-Lambert">Services de serrurerie à Woluwe-Saint-Lambert</a>
+          pour les ouvertures de portes,
+          les réparations et les remplacements
+          de serrures.
+        </p>
+
+        <p>
+          Que vous soyez bloqué devant votre domicile
+          en pleine nuit ou que votre serrure présente
+          un dysfonctionnement, Serrurier Lambert
+          intervient dans le secteur de Woluwe-Saint-Lambert
+          et de Bruxelles.
+        </p>
+
+        <p>
+          L'entreprise met en avant la disponibilité
+          de son service, la communication des prix
+          avant les travaux et des solutions adaptées
+          aux différents systèmes de fermeture.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="tel:+32494810787">
+            Appeler le +32 494 81 07 87
+          </a>
+          <a class="btn btn-outline"
+             href="https://share.google/v8iJ2lnFxw2VqT8Fh"
+             target="_blank"
+             rel="noopener noreferrer">
+            Voir la fiche Google
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INFORMATIONS CLÉS -->
+    <div class="trustbar">
+      <div class="container trust-grid">
+        <div>Service annoncé 24h/24 et 7j/7</div>
+        <div>Intervention à domicile</div>
+        <div>Devis communiqué avant travaux</div>
+      </div>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <section id="presentation" class="section">
+      <div class="container article">
+
+        <h2>
+          Serrurier Lambert – Woluwe :
+          un professionnel de la serrurerie
+          à Woluwe-Saint-Lambert
+        </h2>
+
+        <p>
+          Serrurier Lambert – Woluwe est un service
+          de serrurerie mobile couvrant Woluwe-Saint-Lambert
+          ainsi que plusieurs secteurs de Bruxelles.
+          L'entreprise propose des interventions pour
+          les urgences de serrurerie et les travaux
+          liés à la sécurité des portes.
+        </p>
+
+        <p>
+          Une serrure qui refuse de fonctionner,
+          une porte claquée avec les clés à l'intérieur
+          ou un cylindre endommagé peut entraîner
+          une difficulté immédiate d'accès au logement.
+          Dans ce type de situation, le recours
+          à un serrurier professionnel permet
+          d'obtenir un diagnostic et une solution appropriée.
+        </p>
+
+        <p>
+          Serrurier Lambert met en avant son expérience
+          dans le dépannage, l'ouverture de portes,
+          le remplacement de cylindres et la sécurisation
+          des accès après une tentative d'effraction.
+        </p>
+
+        <p>
+          Son service d'urgence est annoncé disponible
+          tous les jours, y compris la nuit,
+          le week-end et les jours fériés.
+          La disponibilité du technicien et le délai
+          d'arrivée doivent être confirmés lors de l'appel.
+        </p>
+
+        <h2>
+          Pourquoi choisir Serrurier Lambert à Woluwe ?
+        </h2>
+
+      </div>
+
+      <div class="container">
+        <div class="cards">
+
+          <div class="card">
+            <h3>1. Dépannage 24h/24</h3>
+            <p>
+              Serrurier Lambert annonce un service
+              d'urgence permanent pour les portes
+              bloquées, les clés perdues et les problèmes
+              nécessitant une assistance en dehors
+              des horaires habituels.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>2. Intervention dans la région</h3>
+            <p>
+              L'entreprise dessert Woluwe-Saint-Lambert
+              et la région de Bruxelles.
+              Son organisation mobile permet de se
+              déplacer directement à l'adresse du client.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>3. Avis clients positifs</h3>
+            <p>
+              Les avis associés à Serrurier Lambert – Woluwe
+              mentionnent notamment la ponctualité,
+              la communication, la politesse et
+              l'efficacité lors de dépannages urgents.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>4. Prix annoncés avant intervention</h3>
+            <p>
+              L'entreprise affirme communiquer ses tarifs
+              avant le début des travaux.
+              Il reste recommandé de demander une estimation
+              TTC et de confirmer le montant définitif.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section soft">
+      <div class="container article">
+
+        <h2>
+          Les services de serrurerie proposés
+          à Woluwe-Saint-Lambert
+        </h2>
+
+        <p>
+          Serrurier Lambert – Woluwe propose plusieurs
+          interventions liées aux portes, aux cylindres,
+          aux serrures et à la protection des accès.
+          Voici les principales prestations présentées
+          par l'entreprise.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+            <span class="service-number">01</span>
+            <h3>Ouverture de porte claquée</h3>
+            <p>
+              Intervention lorsqu'une porte s'est
+              refermée avec les clés à l'intérieur.
+              Le serrurier examine le mécanisme
+              et privilégie une méthode non destructive
+              lorsque les conditions le permettent.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">02</span>
+            <h3>Ouverture de porte verrouillée</h3>
+            <p>
+              Une porte fermée à clé peut nécessiter
+              une intervention plus complexe.
+              La méthode dépend du cylindre,
+              du type de porte et de son niveau de sécurité.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">03</span>
+            <h3>Remplacement de serrure</h3>
+            <p>
+              Changement de serrures usées,
+              endommagées ou inadaptées
+              aux besoins de sécurité.
+              Le technicien peut proposer
+              un mécanisme compatible avec la porte.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">04</span>
+            <h3>Changement de cylindre</h3>
+            <p>
+              Remplacement du barillet après
+              la perte de clés, un vol,
+              un déménagement ou un
+              dysfonctionnement du mécanisme.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">05</span>
+            <h3>Extraction de clé cassée</h3>
+            <p>
+              Retrait d'un fragment de clé coincé
+              dans le cylindre, avec vérification
+              de l'état du mécanisme après l'intervention.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">06</span>
+            <h3>Dépannage de serrure bloquée</h3>
+            <p>
+              Diagnostic d'une serrure grippée,
+              d'un cylindre qui tourne difficilement
+              ou d'un système de fermeture
+              qui ne fonctionne plus correctement.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">07</span>
+            <h3>Sécurisation après effraction</h3>
+            <p>
+              Réparation ou remplacement
+              des éléments de fermeture endommagés
+              après un cambriolage ou
+              une tentative d'intrusion.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="service-number">08</span>
+            <h3>Serrures multipoints et portes blindées</h3>
+            <p>
+              Solutions de protection comprenant
+              des serrures multipoints,
+              des cylindres de sécurité
+              et des portes renforcées,
+              selon les besoins du bâtiment.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTE CLAQUÉE -->
+    <section class="section">
+      <div class="container article">
+
+        <h2>
+          Ouverture de porte en urgence
+          à Woluwe-Saint-Lambert
+        </h2>
+
+        <p>
+          Se retrouver bloqué devant son appartement
+          ou sa maison peut arriver à tout moment.
+          Il suffit parfois d'un courant d'air
+          ou d'un instant d'inattention pour
+          qu'une porte se referme avec les clés à l'intérieur.
+        </p>
+
+        <p>
+          Une ouverture de porte demande de prendre
+          en compte plusieurs éléments :
+          le type de serrure, la présence éventuelle
+          d'un verrou de sécurité, l'état du cylindre
+          et la configuration de la porte.
+        </p>
+
+        <p>
+          Serrurier Lambert propose des dépannages
+          pour les portes claquées et verrouillées.
+          Lorsqu'une ouverture sans dégradation est possible,
+          cette option peut permettre de conserver
+          la serrure existante.
+        </p>
+
+        <div class="highlight">
+          <strong>Conseil pratique :</strong>
+          évitez de forcer la porte, d'insérer
+          des objets improvisés dans le cylindre
+          ou d'exercer une pression excessive
+          sur la poignée. Ces manipulations
+          peuvent aggraver les dommages.
+        </div>
+
+        <h2>
+          Remplacement de serrure après
+          une perte ou un vol de clés
+        </h2>
+
+        <p>
+          Lorsque des clés disparaissent,
+          il peut être difficile de déterminer
+          si elles ont simplement été égarées
+          ou si une personne non autorisée
+          pourrait les utiliser.
+        </p>
+
+        <p>
+          Dans certaines situations,
+          le remplacement du cylindre constitue
+          une mesure de précaution pertinente.
+          Il permet de modifier les clés donnant
+          accès à une porte sans nécessairement
+          remplacer l'ensemble du mécanisme.
+        </p>
+
+        <p>
+          Serrurier Lambert intervient sur
+          les systèmes de fermeture classiques
+          et sur différents dispositifs de sécurité.
+          Le choix du nouveau cylindre dépend
+          notamment de la compatibilité avec la porte
+          et du niveau de résistance recherché.
+        </p>
+
+        <h2>
+          Dépannage de serrures endommagées
+          ou difficiles à utiliser
+        </h2>
+
+        <p>
+          Une serrure qui fonctionne mal peut présenter
+          plusieurs symptômes avant de se bloquer
+          complètement.
+        </p>
+
+        <ul>
+          <li>La clé tourne difficilement.</li>
+          <li>Le cylindre tourne dans le vide.</li>
+          <li>La porte ne se verrouille plus correctement.</li>
+          <li>Le mécanisme produit un bruit inhabituel.</li>
+          <li>La poignée reste coincée.</li>
+          <li>La porte frotte contre son encadrement.</li>
+        </ul>
+
+        <p>
+          Ces problèmes peuvent résulter de l'usure,
+          d'une pièce cassée ou d'un mauvais alignement.
+          Un diagnostic peut permettre de déterminer
+          si une réparation suffit ou si le remplacement
+          d'un composant est nécessaire.
+        </p>
+
+        <h2>
+          Sécurisation de votre habitation
+          après une tentative d'effraction
+        </h2>
+
+        <p>
+          Après une tentative de cambriolage,
+          une porte peut sembler fonctionner
+          alors que certains composants ont été fragilisés.
+        </p>
+
+        <p>
+          Le cylindre, la gâche, la serrure
+          et l'encadrement doivent être examinés
+          pour déterminer si leur résistance
+          a été compromise.
+        </p>
+
+        <p>
+          Serrurier Lambert propose des interventions
+          de dépannage et de remise en sécurité.
+          Selon les dommages constatés,
+          une réparation, un remplacement de serrure
+          ou un renforcement supplémentaire
+          peut être recommandé.
+        </p>
+
+        <p>
+          En cas d'effraction en cours,
+          contactez en priorité la police.
+          Conservez également les documents
+          et factures utiles pour votre assurance.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- PROCESSUS -->
+    <section class="section soft">
+      <div class="container">
+
+        <h2>
+          Comment demander une intervention
+          de Serrurier Lambert ?
+        </h2>
+
+        <div class="steps">
+
+          <div class="step">
+            <span class="step-number">1</span>
+            <p>
+              <strong>Contactez le serrurier.</strong>
+              Appelez le
+              <a href="tel:+32494810787">
+                +32 494 81 07 87
+              </a>
+              pour expliquer votre demande.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">2</span>
+            <p>
+              <strong>Décrivez le problème.</strong>
+              Précisez si votre porte est claquée,
+              verrouillée, endommagée ou si
+              votre clé est cassée.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">3</span>
+            <p>
+              <strong>Confirmez l'adresse.</strong>
+              Indiquez votre localisation exacte
+              à Woluwe-Saint-Lambert et
+              les informations utiles pour l'accès.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">4</span>
+            <p>
+              <strong>Vérifiez le prix.</strong>
+              Demandez le montant estimé TTC,
+              les frais de déplacement et
+              les éventuelles majorations.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">5</span>
+            <p>
+              <strong>Préparez l'intervention.</strong>
+              Gardez votre téléphone accessible
+              et préparez un justificatif de votre
+              droit d'accès au logement.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section id="tarifs" class="section">
+      <div class="container article">
+
+        <h2>
+          Combien coûte un serrurier
+          à Woluwe-Saint-Lambert ?
+        </h2>
+
+        <p>
+          Le prix d'un dépannage de serrurerie
+          varie selon la nature du problème,
+          le système de fermeture,
+          les pièces nécessaires
+          et le moment de l'intervention.
+        </p>
+
+        <p>
+          Le site de Serrurier Lambert indique
+          des tarifs de départ pour certaines
+          interventions à Woluwe-Saint-Lambert.
+          Les montants ci-dessous sont indicatifs
+          et doivent être confirmés par téléphone.
+        </p>
+
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Prestation</th>
+              <th>Tarif indicatif annoncé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ouverture de porte en journée</td>
+              <td>À partir de 89 €</td>
+            </tr>
+            <tr>
+              <td>Ouverture de porte la nuit ou le week-end</td>
+              <td>À partir de 130 €</td>
+            </tr>
+            <tr>
+              <td>Changement de cylindre</td>
+              <td>Prix après diagnostic</td>
+            </tr>
+            <tr>
+              <td>Réparation après effraction</td>
+              <td>Selon les dommages</td>
+            </tr>
+            <tr>
+              <td>Installation de serrure de sécurité</td>
+              <td>Sur devis</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Ces prix sont des montants de départ
+          publiés par l'entreprise, et non
+          une garantie du coût final.
+          Vérifiez si le devis inclut la TVA,
+          le déplacement, la main-d'œuvre,
+          les pièces et les majorations.
+        </p>
+
+        <div class="highlight">
+          <strong>À retenir :</strong>
+          faites confirmer le prix
+          avant le début des travaux et
+          demandez une facture détaillée
+          après l'intervention.
+        </div>
+
+        <h2>
+          Serrurier pour maisons,
+          appartements, bureaux et commerces
+        </h2>
+
+        <p>
+          Les besoins en serrurerie ne se limitent
+          pas aux logements privés.
+          Les bureaux et commerces peuvent
+          également rencontrer des problèmes
+          de serrure, de contrôle d'accès
+          ou de fermeture de porte.
+        </p>
+
+        <p>
+          Serrurier Lambert présente notamment
+          des solutions pour les serrures de sécurité,
+          les fermetures multipoints
+          et certains systèmes d'accès
+          destinés aux locaux professionnels.
+        </p>
+
+        <p>
+          Pour un projet nécessitant une installation
+          particulière, il est préférable
+          de préciser les caractéristiques
+          du bâtiment afin d'obtenir
+          une estimation adaptée.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- SECTEUR -->
+    <section class="section soft">
+      <div class="container article">
+
+        <h2>
+          Un serrurier intervenant
+          à Woluwe-Saint-Lambert et dans Bruxelles
+        </h2>
+
+        <p>
+          Woluwe-Saint-Lambert est une commune
+          de la Région de Bruxelles-Capitale,
+          portant le code postal 1200.
+          Elle comprend plusieurs zones résidentielles,
+          des commerces, des bureaux
+          et des espaces professionnels.
+        </p>
+
+        <p>
+          Serrurier Lambert intervient dans
+          le secteur de Woluwe-Saint-Lambert
+          et annonce couvrir plus largement
+          les 19 communes de Bruxelles.
+        </p>
+
+        <p>
+          Les demandes peuvent notamment concerner
+          des logements situés dans le secteur
+          de Tomberg, Roodebeek, Georges Henri,
+          du quartier de l'Hof ten Berg
+          ou des environs de l'avenue de Broqueville.
+        </p>
+
+        <p>
+          Pour chaque adresse,
+          il est recommandé de confirmer
+          directement par téléphone
+          la disponibilité et les délais.
+        </p>
+
+        <h2>
+          Comment choisir un serrurier fiable
+          à Woluwe-Saint-Lambert ?
+        </h2>
+
+        <h3>Vérifier les coordonnées professionnelles</h3>
+        <p>
+          Avant de faire intervenir un serrurier,
+          consultez son nom commercial,
+          son numéro de téléphone,
+          son site et ses informations
+          professionnelles accessibles au public.
+        </p>
+
+        <h3>Consulter les avis Google</h3>
+        <p>
+          Les avis permettent d'obtenir
+          des informations sur les expériences
+          vécues par d'autres clients.
+          Examinez leur date,
+          leur contenu et leur nombre.
+        </p>
+
+        <h3>Demander un prix clair</h3>
+        <p>
+          Une estimation détaillée permet
+          de mieux comprendre le coût
+          du dépannage et les conditions
+          applicables avant le déplacement.
+        </p>
+
+        <h3>Privilégier une solution adaptée</h3>
+        <p>
+          Le remplacement intégral d'une serrure
+          n'est pas systématiquement nécessaire.
+          Une évaluation professionnelle
+          peut aider à déterminer si
+          une réparation ou un simple
+          changement de cylindre suffit.
+        </p>
+
+        <h2>
+          Conseils pour entretenir vos serrures
+          et réduire les risques de blocage
+        </h2>
+
+        <p>
+          Un entretien approprié peut contribuer
+          à prolonger la durée de vie
+          de certains mécanismes de fermeture.
+        </p>
+
+        <ul>
+          <li>
+            Évitez de forcer une clé qui tourne mal.
+          </li>
+          <li>
+            Faites vérifier une porte mal alignée.
+          </li>
+          <li>
+            Utilisez uniquement un lubrifiant
+            recommandé pour le cylindre concerné.
+          </li>
+          <li>
+            Remplacez les clés fortement usées.
+          </li>
+          <li>
+            Conservez un double de clé
+            dans un endroit sûr.
+          </li>
+          <li>
+            Demandez conseil si la serrure
+            présente régulièrement des difficultés.
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container faq">
+
+        <h2>
+          Questions fréquentes
+          sur Serrurier Lambert – Woluwe
+        </h2>
+
+        <details>
+          <summary>
+            Serrurier Lambert intervient-il
+            24h/24 à Woluwe-Saint-Lambert ?
+          </summary>
+          <p>
+            Oui. L'entreprise annonce
+            un service de dépannage disponible
+            24h/24 et 7j/7, y compris les week-ends.
+            La disponibilité immédiate
+            doit être confirmée par téléphone.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Quel est le numéro de téléphone
+            de Serrurier Lambert – Woluwe ?
+          </summary>
+          <p>
+            Vous pouvez appeler
+            <a href="tel:+32494810787">
+              +32 494 81 07 87
+            </a>.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Serrurier Lambert ouvre-t-il
+            les portes claquées ?
+          </summary>
+          <p>
+            Oui. L'ouverture des portes
+            claquées et verrouillées
+            fait partie des services
+            présentés par l'entreprise.
+            La méthode dépend du mécanisme.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Peut-on faire remplacer un cylindre
+            après une perte de clés ?
+          </summary>
+          <p>
+            Oui. Serrurier Lambert propose
+            le remplacement des cylindres
+            et des serrures lorsque cela
+            est nécessaire pour rétablir
+            ou améliorer la sécurité.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Quel est le prix d'une ouverture
+            de porte à Woluwe-Saint-Lambert ?
+          </summary>
+          <p>
+            Le site de l'entreprise indique
+            des montants de départ de 89 €
+            en journée et 130 € la nuit
+            ou le week-end.
+            Le coût exact doit être confirmé,
+            notamment concernant la TVA,
+            les déplacements et les pièces.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Serrurier Lambert intervient-il
+            après une tentative de cambriolage ?
+          </summary>
+          <p>
+            L'entreprise propose des interventions
+            de serrurerie après effraction,
+            notamment pour réparer ou remplacer
+            des mécanismes de fermeture endommagés.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Dans quels quartiers
+            de Woluwe-Saint-Lambert intervient-il ?
+          </summary>
+          <p>
+            L'entreprise dessert
+            Woluwe-Saint-Lambert et la région
+            de Bruxelles. Indiquez votre
+            adresse précise pour confirmer
+            l'intervention dans votre quartier.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Comment contacter Serrurier Lambert
+            par e-mail ?
+          </summary>
+          <p>
+            L'adresse professionnelle publiée
+            est
+            <a href="mailto:info@serrurier-lambert.be">
+              info@serrurier-lambert.be
+            </a>.
+            Pour une urgence, le téléphone
+            reste le moyen le plus direct.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Où trouver la fiche Google
+            de Serrurier Lambert – Woluwe ?
+          </summary>
+          <p>
+            Vous pouvez consulter
+            <a href="https://share.google/v8iJ2lnFxw2VqT8Fh"
+               target="_blank"
+               rel="noopener noreferrer">
+              la fiche Google de Serrurier Lambert – Woluwe
+            </a>
+            pour connaître les informations
+            et avis disponibles.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- NAP -->
+    <section id="contact" class="section soft">
+      <div class="container">
+
+        <h2>
+          Coordonnées NAP de Serrurier Lambert – Woluwe
+        </h2>
+
+        <div class="contact-box">
+
+          <h3>Serrurier Lambert – Woluwe</h3>
+
+          <div class="nap-row">
+            <strong>Nom (Name) :</strong>
+            Serrurier Lambert - Woluwe
+          </div>
+
+          <div class="nap-row">
+            <strong>Adresse (Address) :</strong>
+            Woluwe-Saint-Lambert, 1200 Bruxelles,
+            Région de Bruxelles-Capitale, Belgique.
+            Service mobile ; adresse de rue
+            non confirmée publiquement.
+          </div>
+
+          <div class="nap-row">
+            <strong>Téléphone (Phone) :</strong>
+            <a href="tel:+32494810787">
+              +32 494 81 07 87
+            </a>
+          </div>
+
+          <div class="nap-row">
+            <strong>Adresse e-mail :</strong>
+            <a href="mailto:info@serrurier-lambert.be">
+              info@serrurier-lambert.be
+            </a>
+          </div>
+
+          <div class="nap-row">
+            <strong>Site internet :</strong>
+            <a href="https://serrurier-lambert.be/"
+               target="_blank"
+               rel="noopener noreferrer">
+              serrurier-lambert.be
+            </a>
+          </div>
+
+          <div class="nap-row">
+            <strong>Horaires :</strong>
+            24h/24 et 7j/7
+          </div>
+
+          <div class="nap-row">
+            <strong>Activité :</strong>
+            Serrurier, dépannage d'urgence,
+            remplacement de serrures,
+            sécurisation des portes.
+          </div>
+
+          <div class="nap-row">
+            <strong>Zone d'intervention :</strong>
+            Woluwe-Saint-Lambert et région
+            de Bruxelles, sur confirmation.
+          </div>
+
+          <div class="nap-row">
+            <strong>Google Maps :</strong>
+            <a href="https://www.google.com/maps/place/Serrurier+Lambert+-+Woluwe/data=!4m2!3m1!1s0x0:0xd1f2a506daa8f46b?sa=X&amp;ved=1t:2428&amp;hl=en-GB&amp;ictx=111"
+               target="_blank"
+               rel="noopener noreferrer">
+              Voir la fiche professionnelle
+            </a>
+          </div>
+
+          <div style="margin-top:27px;">
+            <a class="btn" href="tel:+32494810787">
+              Contacter Serrurier Lambert
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="section">
+      <div class="container article">
+
+        <h2>
+          Conclusion : pourquoi contacter
+          Serrurier Lambert à Woluwe-Saint-Lambert ?
+        </h2>
+
+        <p>
+          Un problème de serrure peut rapidement
+          perturber le quotidien.
+          Une porte claquée, une clé cassée
+          ou un mécanisme de fermeture endommagé
+          nécessite parfois l'intervention
+          d'un professionnel.
+        </p>
+
+        <p>
+          <strong>Serrurier Lambert – Woluwe</strong>
+          est une entreprise à considérer
+          pour les besoins de serrurerie
+          à Woluwe-Saint-Lambert.
+          Elle présente un service mobile,
+          une disponibilité annoncée 24h/24
+          et 7j/7, et plusieurs prestations
+          liées au dépannage et à la sécurisation
+          des portes.
+        </p>
+
+        <p>
+          Pour une ouverture de porte,
+          un remplacement de serrure,
+          une clé perdue ou une intervention
+          après effraction, contactez l'entreprise
+          afin de confirmer la disponibilité,
+          les modalités du dépannage et
+          le tarif applicable.
+        </p>
+
+        <p>
+          Pour obtenir les informations
+          professionnelles les plus récentes,
+          consultez également sa fiche Google.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+
+      <h2>
+        Besoin d'un serrurier
+        à Woluwe-Saint-Lambert ?
+      </h2>
+
+      <p>
+        Contactez Serrurier Lambert – Woluwe
+        pour obtenir des informations
+        sur les interventions disponibles,
+        les délais et les prix.
+      </p>
+
+      <a class="btn" href="tel:+32494810787">
+        Appeler le +32 494 81 07 87
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <p>
+        <strong>Serrurier Lambert – Woluwe</strong><br>
+        Woluwe-Saint-Lambert, 1200 Bruxelles, Belgique
+      </p>
+
+      <p>
+        Téléphone :
+        <a href="tel:+32494810787">
+          +32 494 81 07 87
+        </a>
+        ·
+        <a href="mailto:info@serrurier-lambert.be">
+          info@serrurier-lambert.be
+        </a>
+      </p>
+
+      <p>
+        Horaires annoncés : 24h/24 et 7j/7.
+        Tarifs et disponibilité à confirmer
+        directement auprès de l'entreprise.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- DONNÉES STRUCTURÉES -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Serrurier à Woluwe-Saint-Lambert : dépannage d'urgence avec Serrurier Lambert",
+    "description": "Présentation des services de serrurerie d'urgence proposés par Serrurier Lambert à Woluwe-Saint-Lambert.",
+    "inLanguage": "fr-BE",
+    "about": {
+      "@type": "Locksmith",
+      "name": "Serrurier Lambert - Woluwe",
+      "url": "https://serrurier-lambert.be/",
+      "telephone": "+32494810787",
+      "email": "info@serrurier-lambert.be",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Woluwe-Saint-Lambert, Bruxelles, Belgique"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "sameAs": [
+        "https://www.google.com/maps/place/Serrurier+Lambert+-+Woluwe/data=!4m2!3m1!1s0x0:0xd1f2a506daa8f46b"
+      ]
+    }
+  }
+  </script>
+
+</body>
+</html>
